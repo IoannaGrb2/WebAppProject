@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+}
+
+
+.container-fluid{
+    background-color: rgb(246, 246, 246);
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    counter-reset: none;
+    margin-top: 150px;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.row{
+    padding-top: 15px;
+}
+
+.text-grey{
+    color: rgb(152, 142, 142);
+}
+
+.email, .password {
+    width: 90%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-width: 0;
+    padding-left: 10px;
+}
+
+.submit-btn {
+    width: 200px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    border-width: 0;
+    color: white;
+    text-align: center;
+}
+
+.halign{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pb-50{
+    padding-bottom: 50px;
+}
