@@ -133,3 +133,24 @@ menu > ul{
     margin-left: 890px;
     font-size: large;
 }
+
+.comment-box {
+    background-color: #e7e7e7;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px black;
+}
+
+.post-comment .list .user {
+    height: 38px;
+    width: 38px;
+    margin-right: 10px;
+    background-color: #e7e7e7;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px black;
+}
+
+.comment-session{
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
