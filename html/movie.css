@@ -1,18 +1,20 @@
 *{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
 }
 
 .container{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .header{
    width: 100%;
    margin-top: -15px;
    overflow: hidden;
-   background-color: black;
+   background-color: rgb(0, 0, 0);
    display: flex;
    align-items: center;
+   position: fixed;
 }
 
 .logo{
@@ -27,6 +29,7 @@
 .menu{
     width: 55%;
     float: left;
+    background-color:#302e2e00;
 }
 
 menu > ul{
@@ -35,10 +38,12 @@ menu > ul{
     justify-content: space-around;
     float: left;
     align-self: flex-start;
+    background-color:#302e2e00;
 }
 
 .menu li{
     display: inline-block ;
+    background-color:#302e2e00;
 }
 
 .menu a{
@@ -50,6 +55,7 @@ menu > ul{
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
+    background-color:#302e2e00;
   }
 
   .menu a:hover {
@@ -115,6 +121,7 @@ menu > ul{
 
 .slider li{
     display: inline-block ; 
+    margin-top: 40px;
 }
 
 .slider ul{
@@ -137,20 +144,97 @@ menu > ul{
 .comment-box {
     background-color: #e7e7e7;
     border-radius: 6px;
-    box-shadow: 0 2px 2px black;
 }
 
-.post-comment .list .user {
-    height: 38px;
-    width: 38px;
-    margin-right: 10px;
-    background-color: #e7e7e7;
-    border-radius: 50%;
-    box-shadow: 0 2px 2px black;
+.post-comment .list {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.post-comment .list .user{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    padding: 8px;
+    overflow: hidden;
+    color: #e7e7e7;
 }
 
 .comment-session{
     width: 650px;
     height: auto;
-    margin: 0 auto;
+    margin-top: 100px;
+    padding-left: 70px;
+    align-self: flex-start;
 }
+
+.comment-session .post-comment .list .comment-post {
+    background-color: #e7e7e7;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px black;
+    padding: 10px;
+    margin-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.comment-session .name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #e7e7e7;
+    color: black;
+}
+.comment-session .user{
+    background-color: #e7e7e7;
+}
+.post-comment .list .day{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.comment-box{
+    margin-top: 30px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #302e2e;
+    margin-bottom: 100px;
+}
+
+.comment-box .user{
+    display: flex;
+    width: min-content;
+}
+
+.comment-box .user .name{
+    background-color:  #302e2e;
+    color: #e7e7e7;
+}
+
+.comment-box textarea{
+    background: #f2f2f2;
+    width: -webkit-fill-available;
+    height: 152px;
+    margin: 10px 0;
+    padding: 10px;
+    resize: inherit;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(65, 62, 62, 0.53);
+}
+
+.comment-box .comment-submit{
+    color: white;
+    background-color:rgba(203, 8, 8, 0.901);
+    border-radius: 5px;
+    font: size 120px;
+    padding: 3px;
+    width: 95px;
+    height: 40px;
+    cursor:pointer;
+    border: none;
+    float: right;
+
+}
+
+.checked {
+    color: orange;
+  }
