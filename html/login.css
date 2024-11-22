@@ -5,37 +5,55 @@
     margin-bottom: auto;
 }
 
+body{
+    background-image: url(../images/loginbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .container-fluid{
-    background-color: rgb(246, 246, 246);
-    width: 40%;
+    position: relative;
+    background-color: rgba(3, 3, 3, 0.575);
+    width: 400px;
+    height: 420px;
     margin: 20px auto;
     padding: 10px 20px;
     counter-reset: none;
-    margin-top: 150px;
+    margin-top: 190px;
+    border-radius: 10px;
 }
 
 .container{
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
     text-align: center;
+    align-self: center;
 }
 
-.row{
-    padding-top: 15px;
+.row > img{
+    height: 80px;
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.text-grey{
-    color: rgb(152, 142, 142);
+.row-halign{
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:  0px; 
 }
+
 
 .email, .password {
-    width: 90%;
+    width: 300px;
     height: 40px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    margin-top: 10px;
     border-width: 0;
     padding-left: 10px;
 }
@@ -43,18 +61,25 @@
 .submit-btn {
     width: 200px;
     height: 40px;
-    background-color: blueviolet;
+    background-color:rgba(203, 8, 8, 0.901);
     border-radius: 5px;
     border-width: 0;
     color: white;
     text-align: center;
+    margin-top: 30px;
 }
 
-.halign{
-    margin-top: 10px;
+.row-halign{
+    margin-top: 40px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .pb-50{
     padding-bottom: 50px;
 }
+
+a:link, a:visited {
+    color: rgb(197, 194, 194);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

@@ -9,14 +9,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="logo">
-                <img src="../images/logo.jpg">
-            </div>
-            <div class="menu fixed-top">
+            <div class="menu">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <div class="logo">
+                        <img src="../images/logo.png">
+                    </div>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="MyList.html">My List</a></li>
-                    <li><a href="">My Reviews</a></li>
+                    <li><a href="topten.html">Top 10 Movies</a></li>
                     <li><a href="">Profile</a></li>
                     <li><input type="text" placeholder="Search"></li>
                     <li><button type="submit"><img src="../images/searchbar.png"></button></li>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="slider">
-                <div class="title"></div>
+                <div class="title"><h1>null</h1></div>
                 <img class="mySlides" src="../images/callmebyyourname.jpg">
                 <img class="mySlides" src="../images/littlewomen.jpg">
                 <img class="mySlides" src="../images/friends.jpg">
@@ -36,8 +36,38 @@
             <div class="main-text"></div>
         </div>
         <div class="footer">
-            <div class="copyright"></div>
-            <div class="social"></div>
+            <footer style="background-color: #000000; color: #ffffff; padding: 20px 0; text-align: center;">
+                <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                    <!-- Logo and Navigation -->
+                    <div style="margin-bottom: 20px;">
+                        <h2 style="margin: 0; font-family: Arial, sans-serif;">RateFlix</h2>
+                        <nav style="margin-top: 10px;">
+                            <a href="/about" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">About Us</a>
+                            <a href="/contact" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact</a>
+                            <a href="/terms" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Terms of Service</a>
+                            <a href="/privacy" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Privacy Policy</a>
+                        </nav>
+                    </div>
+        
+                    <!-- Social Media Links -->
+                    <div style="margin-bottom: 20px;">
+                        <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #ffffff; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            <img src="facebook-icon.png" alt="Facebook" style="width: 24px; vertical-align: middle; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Facebook
+                        </a>
+                        <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: #ffffff; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            <img src="twitter-icon.png" alt="Twitter" style="width: 24px; vertical-align: middle; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Twitter
+                        </a>
+                        <a href="https://instagram.com" target="_blank" style="margin: 0 10px; color: #ffffff; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            <img src="instagram-icon.png" alt="Instagram" style="width: 24px; vertical-align: middle; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Instagram
+                        </a>
+                    </div>
+        
+                    <!-- Copyright -->
+                    <div>
+                        <p style="margin: 0; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">&copy; 2024 Rateflix. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 </body>

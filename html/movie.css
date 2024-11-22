@@ -1,35 +1,40 @@
 *{
-    background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
+    background-color: black;
 }
 
 .container{
-    background-color: rgb(0, 0, 0);
+    background-color: black;
+    width: 100%;
+    height: 100%;
 }
 
 .header{
    width: 100%;
-   margin-top: -15px;
    overflow: hidden;
    background-color: rgb(0, 0, 0);
-   display: flex;
+   display:flex;
    align-items: center;
-   position: fixed;
 }
 
 .logo{
-    float: left;
+    float:left;
 }
 
 .logo > img {
-    width: 180px;
-    height: 70px;
+    width: 145px;
+    height: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -5px;
 }
 
 .menu{
-    width: 55%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: -6px;
     float: left;
-    background-color:#302e2e00;
+    background-color: #000000;
 }
 
 menu > ul{
@@ -38,12 +43,10 @@ menu > ul{
     justify-content: space-around;
     float: left;
     align-self: flex-start;
-    background-color:#302e2e00;
 }
 
 .menu li{
     display: inline-block ;
-    background-color:#302e2e00;
 }
 
 .menu a{
@@ -55,11 +58,10 @@ menu > ul{
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
-    background-color:#302e2e00;
   }
 
   .menu a:hover {
-    background-color: #655d5d;
+    background-color: #96939385;
     color: rgb(255, 255, 255);
   }
 
@@ -100,7 +102,7 @@ menu > ul{
     border: none;
     cursor: pointer;
     appearance: none;
-    background-color: inherit;
+    background-color:transparent;
 }
 .slider h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -126,6 +128,8 @@ menu > ul{
 
 .slider ul{
     color: #655d5d;
+    margin-left: -40px;
+    margin-bottom: -16px;
 }
 
 .slider .indetend{
