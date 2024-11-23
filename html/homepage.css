@@ -88,14 +88,14 @@ menu > ul{
 
 
 .slider img{
+    margin-top: -5px;
     width: 800px;
     height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-.slider img:hover {
-    opacity: 1.0;
-  }
-  
 .menu button > img{
     width: 45px;
     height: 45px;
@@ -106,4 +106,20 @@ menu > ul{
     cursor: pointer;
     appearance: none;
     background-color: inherit;
+}
+
+.slider img{
+    margin-top: -10px;
+    width: 600px;
+    height: 300px;
+    padding-top: 7px;
+    padding-right: 5px;
+}
+
+.slider h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e7e7e7;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
 }
