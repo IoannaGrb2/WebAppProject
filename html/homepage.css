@@ -25,7 +25,7 @@
     height: 55px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: -5px;
+    margin-top: 10px;
 }
 
 .menu{
@@ -58,6 +58,7 @@ menu > ul{
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
+    margin-top: 3px;
   }
 
   .menu a:hover {
@@ -123,3 +124,128 @@ menu > ul{
     margin-bottom: 30px;
     margin-top: 100px;
 }
+    .footer {
+        position: fixed; /* Always stays at the bottom */
+        bottom: 0; /* Aligns with the bottom of the page */
+        left: 50%; /* Centers horizontally */
+        transform: translateX(-50%); /* Centers the content perfectly */
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        width: auto; /* Adapts to content width */
+        border-radius: 8px; /* Optional: Rounded corners for better aesthetics */
+    }
+.header {
+    background-color: #000000;
+    padding: 0.5em 1em;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-links ul {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 0.75em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #000000;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1em 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 0.5em 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-bar {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+}
+
