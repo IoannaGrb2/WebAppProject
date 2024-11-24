@@ -3,54 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web App Aueb</title>
+    <title>WebDevelopment Course</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <a href="https://www.youtube.com/watch?v=s-8bgo-9nSg"><img src="../images/aueb.webp" alt="Youtube Logo" width="500" height="auto"></a>
-    <h1>AUEB</h1>
-    <pre>Welcome to the seminar!
-    </pre>
+    <div class="container">
+        <div class="header">
+            <div class="menu">
+                <ul>
+                    <div class="logo">
+                        <img src="../images/logo.png">
+                    </div>
+                    <button class="toggle-menu" aria-label="Toggle navigation">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="MyList.html">My List</a></li>
+                        <li><a href="topten.html">Top 10 Movies</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-title"></div>
+            <div class="main-text"></div>
+        </div>
+        <div class="footer">
+            <footer style="background-color: #000000; color: #ffffff; padding: 20px 0; text-align: center;">
+                <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+                    <!-- Logo and Navigation -->
+                    <div style="margin-bottom: 20px;">
+                        <h2 style="margin: 0; font-family: Arial, sans-serif;">RateFlix</h2>
+                        <nav style="margin-top: 10px;">
+                            <a href="/about" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">About Us</a>
+                            <a href="/contact" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact</a>
+                            <a href="/terms" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Terms of Service</a>
+                            <a href="/privacy" style="color: #ffffff; text-decoration: none; margin: 0 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Privacy Policy</a>
+                        </nav>
+                    </div>
+        
+                    <!-- Social Media Links -->
+                    <div style="margin-bottom: 20px;">
+                        <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #ffffff; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            <img src="../images/Facebook-logo.png" alt="Facebook" style="width: 24px; vertical-align: middle; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        </a>
+                        <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: #ffffff; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            <img src="../images/linkedin.png" alt="Twitter" style="width: 24px; vertical-align: middle; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" style="margin: 0 10px; color: #ffffff; text-decoration: none; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            <img src="../images/instagram.jpg" alt="Instagram" style="width: 24px; vertical-align: middle; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        </a>
+                    </div>
+        
+                    <!-- Copyright -->
+                    <div>
+                        <p style="margin: 0; font-size: 14px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">&copy; 2024 Rateflix. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+    </div>
+    <script>
+        // Select the toggle button and the nav menu
+        const toggleButton = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
 
-    <table>
-        <h2>Καθηγητής</h2>
-        <tr>
-            <th>Ονοματεπώνυμο</th>
-            <th>Μάθημα</th>
-        </tr>
-        <tr>
-            <td>Ανδρούτσος Αθανασιος</td>
-            <td>Web Development</td>
-        </tr>
-        <tr>
-            <td>Καπετης Μακης</td>
-            <td>Βάσεις Δεδομένων</td>
-        </tr>
-    </table>
-        <h2> Υποχρεωτικά Μαθήματα</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>Javascript</li>
-            <li>Bootstrap</li>
-            <li>Angular</li>
-        </ul>
-        <h2>Μαθήματα Επιλογής</h2>
-        <ol>
-            <li>Python</li>
-            <li>Drupal</li>
-            <li>Data Bases</li>
-            <li>Java</li>
-        </ol>
-        <dl>
-            <dt>HTML</dt>
-            <dd>Hypertext Markup Language</dd>
-
-            <dt>HTTP</dt>
-            <dd>Hypertext Transfer Protocol</dd>
-        </dl>
-
- 
-
-
-
+        // Toggle the menu visibility on button click
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

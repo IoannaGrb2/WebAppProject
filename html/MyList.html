@@ -14,30 +14,72 @@
                     <div class="logo">
                         <img src="../images/logo.png">
                     </div>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="MyList.html">My List</a></li>
-                    <li><a href="topten.html">Top 10 Movies</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><input type="text" placeholder="Search"></li>
-                    <li><button type="submit"><img src="../images/searchbar.png"></button></li>
+                    <button class="toggle-menu" aria-label="Toggle navigation">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="MyList.html">My List</a></li>
+                        <li><a href="topten.html">Top 10 Movies</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
                 </ul>
             </div>
         </div>
-        <div class="slider">
-                <div class="title"><h1>My List</h1></div>
-                <a href="movie.html"><img class="mySlides" src="../images/callmebyyourname.jpg"></a>
-                <img class="mySlides" src="../images/beautifulboy.png">
-                <img class="mySlides" src="../images/avatar.jpg">
-                <img class="mySlides" src="../images/coraline.jpg">
-                <img class="mySlides" src="../images/talentedripley.jpg">
-                <img class="mySlides" src="../images/standbyme.jpg">
-                <img class="mySlides" src="../images/interstellar.jpg">
-                <img class="mySlides" src="../images/How-to-lose-a-guy-in-ten-days-movie.jpeg">
-                <img class="mySlides" src="../images/goodwillhunting.jpg">
-        </div>
         <div class="main">
-            <div class="main-title"></div>
-            <div class="main-text"></div>
+            <div class="title">
+                <h1>My List</h1>
+            </div>
+            <div class="slideshow-container">
+                <!-- Slideshow Boxes -->
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/callmebyyourname.jpg" alt="Call Me by Your Name">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/beautifulboy.png" alt="Beautiful Boy">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/avatar.jpg" alt="Avatar">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/coraline.jpg" alt="Coraline">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/talentedripley.jpg" alt="The Talented Mr. Ripley">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/standbyme.jpg" alt="Stand by Me">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/interstellar.jpg" alt="Interstellar">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/How-to-lose-a-guy-in-ten-days-movie.jpeg" alt="How to Lose a Guy in 10 Days">
+                    </a>
+                </div>
+                <div class="slide-box">
+                    <a href="movie.html">
+                        <img class="mySlides" src="../images/goodwillhunting.jpg" alt="Good Will Hunting" style="object-fit: cover;">
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <footer style="background-color: #000000; color: #ffffff; padding: 20px 0; text-align: center;">
@@ -73,5 +115,15 @@
                 </div>
             </footer>
     </div>
+    <script>
+        // Select the toggle button and the nav menu
+        const toggleButton = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Toggle the menu visibility on button click
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

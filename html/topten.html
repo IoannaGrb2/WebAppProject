@@ -14,12 +14,17 @@
                     <div class="logo">
                         <img src="../images/logo.png">
                     </div>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="MyList.html">My List</a></li>
-                    <li><a href="topten.html">Top 10 Movies</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><input type="text" placeholder="Search"></li>
-                    <li><button type="submit"><img src="../images/searchbar.png"></button></li>
+                    <button class="toggle-menu" aria-label="Toggle navigation" >
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="MyList.html">My List</a></li>
+                        <li><a href="topten.html">Top 10 Movies</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
                 </ul>
             </div>
         </div>
@@ -136,5 +141,15 @@
                 </div>
             </footer>
     </div>
+    <script>
+        // Select the toggle button and the nav menu
+        const toggleButton = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Toggle the menu visibility on button click
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

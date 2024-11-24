@@ -86,7 +86,7 @@ menu > ul{
     border-radius: 15px;
 }
 
-.slider img{
+.main img{
     margin-top: -10px;
     margin-left: 50px;
     width: 800px;
@@ -104,14 +104,14 @@ menu > ul{
     appearance: none;
     background-color:transparent;
 }
-.slider h1{
+.main h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e7e7e7;
     margin-left: 935px;
     margin-top: 50px;
 
 }
-.slider h4{
+.main h4{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #a6a2a2b9;
     margin-top: 50px;
@@ -121,24 +121,24 @@ menu > ul{
     text-align: center;
 }
 
-.slider li{
+.main li{
     display: inline-block ; 
     margin-top: 40px;
 }
 
-.slider ul{
+.main ul{
     color: #655d5d;
     margin-left: -40px;
     margin-bottom: -16px;
 }
 
-.slider .indetend{
+.main .indetend{
     padding-left: 50px;
     padding-right: 70px;
     text-align:start;
     margin-top: -500px;
 }
-.slider p{
+.main p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e7e7e7;
     margin-left: 890px;
@@ -241,6 +241,58 @@ menu > ul{
 
 .checked {
     color: orange;
-  }
+}
 
-  
+/* Hamburger Menu Styles */
+.toggle-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+.toggle-menu > button{
+    margin-top: 20px;
+}
+
+.toggle-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hide the menu on smaller screens */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .toggle-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust as per header height */
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+}
