@@ -86,12 +86,22 @@ menu > ul{
     border-radius: 15px;
 }
 
-.main img{
-    margin-top: -10px;
-    margin-left: 50px;
-    width: 800px;
-    height: 500px;
-    display: inline;
+.main-container .flex-box{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.main-container{
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.main-container img {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: auto;
+    width: 45%; /* Allows the image to take up 90% of the container width */
+    height: auto; /* Maintain aspect ratio */
 }
 .menu button > img{
     width: 45px;
@@ -104,41 +114,49 @@ menu > ul{
     appearance: none;
     background-color:transparent;
 }
-.main h1{
+.main-container h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e7e7e7;
-    margin-left: 935px;
-    margin-top: 50px;
-
 }
-.main h4{
+.main-container h4{
+    max-width: 1200px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #a6a2a2b9;
-    margin-top: 50px;
     margin-left: 20px;
     font-size: x-large;
     font-weight: normal;
     text-align: center;
 }
 
-.main li{
+.main-container li{
     display: inline-block ; 
     margin-top: 40px;
 }
 
-.main ul{
+.main-container ul{
     color: #655d5d;
-    margin-left: -40px;
-    margin-bottom: -16px;
+    max-width: 1200px;
+    margin-top: 40px;
+    margin-left:-10px;
 }
 
-.main .indetend{
+.main-container img{
+    width: 800px;
+}
+.image-box{
+    width: fit-content;
+}
+.details-box{
+    margin-top: -470px;
+}
+
+.main-container .indetend{
     padding-left: 50px;
     padding-right: 70px;
     text-align:start;
     margin-top: -500px;
 }
-.main p{
+.main-container p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e7e7e7;
     margin-left: 890px;
@@ -167,6 +185,7 @@ menu > ul{
     height: auto;
     margin-top: 100px;
     padding-left: 70px;
+    padding-right: 30px;
     align-self: flex-start;
 }
 
@@ -294,5 +313,68 @@ menu > ul{
 
     .nav-links.active {
         display: flex; /* Show menu when active */
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        margin-top: 10px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    .main-container ul{
+        color: #655d5d;
+        max-width: 1200px;
+        margin-left: -80px;
+        margin-bottom: -16px;
+    }
+
+    .main-container .flex-box{
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    .main-container ul{
+        color: #655d5d;
+        margin-left: -40px;
+        margin-bottom: -16px;
+    }
+
+    .main-container h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #e7e7e7;
+        font-size: x-large;
+    }
+    .main-container h4{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #a6a2a2b9;
+        margin-left: 10px;
+        font-size: medium;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    .main-container img {
+        width: 100%; /* Full width for smaller screens */
+        margin-left: 10px;
+    }
+
+    .details-box {
+        margin-right: 700px;
+        margin-top: 1000px;
+        padding: 10px;
+        width: 90%; /* Shrink width for smaller screens */
+    }
+
+    .comment-session {
+        width: 100%; /* Full width for comments */
+        padding: 10px;
+        padding-right: 20px;
+    }
+    .comment-session h1{
+        font-size: x-large;
     }
 }
