@@ -221,6 +221,7 @@ menu > ul{
     overflow: hidden;
     background-color: #302e2e;
     margin-bottom: 100px;
+    padding-right: 10px;
 }
 
 .comment-box .user{
@@ -330,6 +331,13 @@ menu > ul{
         margin-left: -80px;
         margin-bottom: -16px;
     }
+    .main-container p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #e7e7e7;
+        margin-left: 10px;
+        font-size: medium;
+    }
+    
 
     .main-container .flex-box{
         margin-top: 0px;
@@ -364,17 +372,25 @@ menu > ul{
 
     .details-box {
         margin-right: 700px;
-        margin-top: 1000px;
+        margin-top: 10px;
         padding: 10px;
         width: 90%; /* Shrink width for smaller screens */
     }
 
     .comment-session {
         width: 100%; /* Full width for comments */
-        padding: 10px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 30px;
     }
     .comment-session h1{
         font-size: x-large;
+    }
+    .comment-box{
+        margin-top: 30px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #302e2e;
+        margin-bottom: 100px;
+        padding-right: 10px;
     }
 }
